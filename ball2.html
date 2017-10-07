@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+
+    <style type="text/css">
+      body {
+          background-color: white;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <canvas id="canvas-for-ball"></canvas>
+
+    <script type="text/javascript">
+      // Gets a handle to the element with id canvasOne.
+      border: 1px solid rgb(100, 100, 100);
+	  
+      // Get a 2D context for the canvas.
+      ctx = clearRect(left, top, width, height);
+      
+      // If the ball hits the bottom of the canvas.
+	  if (...) {
+	  // Stop the ball.
+	  ...
+      }
+
+	  
+	  // If the ball hits the bottom of the canvas.
+	  if (...) {
+	  // Change ball's direction.
+	  ...
+	  }
+      
+	  
+	  // If the ball hits the bottom of the canvas.
+      if (...) {
+	  // Reverse the ball.
+	  ...
+	  }
+	  // Otherwise, if the ball hits the top.
+	  else if (...) {
+	  // Reverse the ball the other way.
+	  }
+	  
+	  
+	  Give the ball a horizontal velocity, as well as a vertical one, and have it bounce
+	  off the left and right sides of the canvas also.
+
+	  Change the code so that the pizza from lab 2 rather than the ball bounces
+	  
+	  
+	  
+	  // A function to repeat every time the animation loops.
+      function repeatme() {
+        // Draw the ball (stroked, not filled).
+        ctx.beginPath();
+        ctx.arc(50, y, 3, 0, 2 * Math.PI);
+        ctx.stroke();
+        
+        // Update the y location.
+        y += 1;
+        
+        window.requestAnimationFrame(repeatme);
+      }
+      
+      // Get the animation going.
+      repeatme();
+	  
+    </script>
+
+  </body>
+
+</html>
