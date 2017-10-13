@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+		canvas{
+			border-style: solid;
+			border-width: 3px;
+			}	
+</style>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Canvas PacMan</title>
+</head>
+<body>
+<canvas id="mycanvas" width="600" height="300">
+
+</canvas>
+<script type="text/javascript">
+var canvas = document.getElementById('mycanvas');
+var ctx = canvas.getContext('2d');
+ctx.fillRect(40, 40, 70, 60);
+ctx.beginPath();
+ctx.arc(100, 100, 50, 0.25 * Math.PI, 1.25 * Math.PI, false);
+ctx.fillStyle = "rgb(255, 255, 0)";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(100, 100, 50, 0.75 * Math.PI, 1.75 * Math.PI, false);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(100, 75, 10, 0, 2 * Math.PI, false);
+ctx.fillStyle = "rgb(0,255, 0)";
+ctx.fill();
+
+/*
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+ctx.fill();
+*/
+
+//Rect
+ctx.fillStyle = "yellow";
+ctx.fillRect(240,38,120,120);
+
+ctx.beginPath();
+ctx.arc(300,100,57,0,2*Math.PI);
+ctx.stroke();
+		
+
+</script>
+</body>
+</html>

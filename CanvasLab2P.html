@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+
+    <style type="text/css">
+		#canvasOne{
+			border-style: solid;
+			border-width: 3px;
+			width: 500px;
+			height: 300px;
+		}		
+		
+		
+    </style>
+    </style>
+
+  </head>
+
+  <body>
+
+    <canvas id="canvasOne" width="700" height="400"></canvas>
+
+    <script type="text/javascript">
+		// Gets a handle to the element with id canvasOne.
+		var canvas = document.getElementById("canvasOne");
+		// Set the canvas up for drawing in 2D.
+		var ctx = canvas.getContext("2d");
+		// Set the fill colour to bright red.
+		ctx.fillStyle = "rgb(255, 0, 0)";
+		// Create a filled rectangle at co-ordinates (10,10)
+		// with height and width set to 70.
+		ctx.fillRect(10, 10, 70, 70);
+		
+		
+		/*
+		var ctx = $('#canvas')[0].getContext("2d");
+		ctx.fillStyle = "#00A308";
+		ctx.beginPath();
+		ctx.arc(150, 50, 5, 0, Math.PI * 2, true);
+		ctx.arc(20, 85, 5, 0, Math.PI * 2, true);
+		ctx.arc(160, 95, 5, 0, Math.PI * 2, true);
+		ctx.closePath();
+		ctx.fill()
+		*/
+
+		//circle pacman
+		ctx.beginPath();
+		ctx.arc(50,45,34,.25 * Math.PI * 1.25, false);
+		ctx.fillStyle = "rgb(255, 255, 0)";
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(50,45,34,.25 * Math.PI * 1.25, false);
+		ctx.fill();
+		ctx.beginPath();
+		ctx.arc(50,45,34,.25 * Math.PI * 1.25, false);
+		ctx.fillStyle = "rgb(0, 0, 0)";
+		ctx.fill();
+		
+		
+		
+		ctx.fillStyle = "yellow";
+		ctx.fillRect(140,38,120,120);
+		
+		ctx.beginPath();
+		ctx.arc(200,100,57,0,2*Math.PI);
+		ctx.stroke();
+		
+		
+		
+		
+		
+    </script>
+
+  </body>
+
+</html>
